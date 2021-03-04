@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+}
+
+header{
+    background: url(../img/bg-principal.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.banner{
+    padding-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.banner h1{
+    font-family: 'Roboto';
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.banner button{
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 270px;
+    height: 53px;
+    text-transform: uppercase;
+
+    margin-top: 60px;
+}
+.banner button a{
+    text-align: center;
+    color: #000;
+}
+
+/*-----SECTION-----*/
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
