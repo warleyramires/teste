@@ -57,6 +57,7 @@ header {
     text-transform: uppercase;
     border: none;
     margin-top: 60px;
+    cursor: pointer;
 }
 
 .banner button a {
