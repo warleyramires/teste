@@ -1,60 +1,295 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-html{
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    font-size: 16px;
-}
-
-header{
-    background: url(../img/bg-principal.jpg) no-repeat;
+header {
+    background: #0088ed url(../img/bg-principal.jpg);
     width: 100%;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.banner{
+.banner {
     padding-top: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
- 
+
 }
 
-.banner h1{
+.banner h1 {
     font-family: 'Roboto';
     font-size: 4rem;
     color: white;
     font-weight: 500;
 }
 
-.banner button{
+.banner button {
     font-size: 1.4rem;
     font-weight: bold;
     width: 270px;
     height: 53px;
     text-transform: uppercase;
-
+    border: none;
     margin-top: 60px;
 }
-.banner button a{
+
+.banner button a {
     text-align: center;
     color: #000;
 }
 
+
 /*-----SECTION-----*/
 
-#container{
-    width: 80%;
-    margin: 0 auto;
+.categories-description {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    padding: 25px 70px;
+}
+
+.categories-description h2 {
+    font-size: 3rem;
+    color: #000;
+
+    margin-bottom: 10px;
+}
+
+.categories-description p {
+    max-width: 800px;
+    color: #000;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.categories .image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories .image li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    position: center;
+}
+
+.categories .image li.small {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.categories .image li.small h3 {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.categories .image li.small p {
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.categories .image li.total {
+    flex-basis: 100%;
+    position: relative;
+}
+
+.categories .image li.total h3 {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.categories .image li.total p {
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.categories .image li.large {
+    flex-basis: 60%;
+    position: relative;
+}
+
+.categories .image li.large h3 {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.categories .image li.large p {
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.filtro {
+    filter: brightness(80%)
+}
+
+/* DATE-DESCRIPTION*/
+
+.date {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+.date-description {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    padding: 25px 70px;
+}
+
+.date-description h2 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.date-description p {
+    max-width: 800px;
+    color: #000;
+}
+
+.cash-box {
+    width: 100%;
+    height: 350px;
+    padding: 0px 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.cash-box :last-child {
+    margin-right: 0;
+}
+
+.cash-box :first-child {
+    margin-left: 0;
+}
+
+.position {
+    position: relative;
+    margin: 0 13px;
+    width: 100%;
+}
+
+.cash-box h2,
+h3,
+p {
+    color: #fff;
+}
+
+.cash-box h2,
+h3 {
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+
+.box-2 p {
+    position: relative;
+    left: 10px;
+}
+
+.cash-box h2 {
+    font-size: 2.1rem;
+}
+
+.cash-box h3 {
+    font-size: 1.7rem;
+}
+
+.cash-box p {
+    font-size: 0.8rem;
+    position: absolute;
+    position: absolute;
+    bottom: 12px;
+    text-align: left;
+}
+
+.box-1 {
+    background-color: #005499;
+    height: 100px;
+}
+
+.box-2 {
+    background-color: #0088ed;
+}
+
+.height1 {
+    height: 100px;
+}
+
+.height2 {
+    height: 150px;
+}
+
+.height3 {
+    height: 200px;
+}
+
+.height4 {
+    height: 250px;
+}
+
+.height5 {
+    height: 300px;
+}
+
+.height6 {
+    height: 330px;
 }
